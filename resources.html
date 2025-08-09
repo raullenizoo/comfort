@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resources — You Are Not Alone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="bg-[color:var(--bg)] text-[color:var(--ink)] antialiased leading-relaxed">
+  <header class="fixed top-4 left-0 right-0 z-40 px-4 sm:px-8">
+    <nav class="max-w-5xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 focus:outline-none focus:ring-2 focus:ring-[color:var(--primary)] rounded">
+        <div class="w-10 h-10 rounded-full flex items-center justify-center bg-[color:var(--accent)] shadow-sm floaty" aria-hidden>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+            <path d="M12 2C9 5 6 9 6 13a6 6 0 0012 0c0-4-3-8-6-11z" fill="white"/>
+          </svg>
+        </div>
+        <span class="font-semibold text-slate-700">You Are Not Alone</span>
+      </a>
+      <div class="hidden md:flex items-center gap-4">
+        <a href="about.html" class="text-sm text-[color:var(--muted)]">About</a>
+        <a href="journal.html" class="text-sm text-[color:var(--muted)]">Journal</a>
+        <a href="quotes.html" class="text-sm text-[color:var(--muted)]">Quotes</a>
+        <a href="contact.html" class="text-sm text-[color:var(--muted)]">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="pt-28 max-w-6xl mx-auto px-6 pb-16">
+    <h1 class="text-3xl font-extrabold">Supportive resources</h1>
+    <p class="mt-4 text-[color:var(--muted)]">If you feel overwhelmed, please prioritize contacting local help or emergency services. Below are categorized resources and suggested readings.</p>
+
+    <section class="mt-6 grid md:grid-cols-3 gap-4">
+      <div class="p-4 bg-white rounded-xl shadow-sm">
+        <h3 class="font-semibold">Immediate help</h3>
+        <p class="text-[color:var(--muted)] mt-2">If you are in immediate danger, contact local emergency services right away.</p>
+        <ul class="mt-3 text-sm text-[color:var(--muted)] list-disc pl-4">
+          <li>Local emergency number</li>
+          <li>Local crisis lines</li>
+        </ul>
+      </div>
+      <div class="p-4 bg-white rounded-xl shadow-sm">
+        <h3 class="font-semibold">Self-help guides</h3>
+        <ul class="mt-2 text-[color:var(--muted)] text-sm list-disc pl-4">
+          <li>Managing overwhelming feelings</li>
+          <li>Grounding techniques</li>
+        </ul>
+      </div>
+      <div class="p-4 bg-white rounded-xl shadow-sm">
+        <h3 class="font-semibold">Books & articles</h3>
+        <ul class="mt-2 text-[color:var(--muted)] text-sm list-disc pl-4">
+          <li>Short reads on resilience</li>
+          <li>Guides for starting therapy</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="mt-6 p-4 bg-white rounded-xl shadow-sm">
+      <h3 class="font-semibold">Local help finder</h3>
+      <p class="text-[color:var(--muted)] mt-2">Use local health services or search for nearby therapists and support groups. If you'd like, copy these links and search in your area.</p>
+    </section>
+  </main>
+
+  <footer class="bg-white border-t py-6 fixed bottom-0 left-0 right-0">
+    <div class="max-w-5xl mx-auto px-6 text-sm text-[color:var(--muted)]">Back to <a href="index.html" class="underline">Home</a></div>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

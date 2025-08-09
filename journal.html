@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Journal — You Are Not Alone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="bg-[color:var(--bg)] text-[color:var(--ink)] antialiased leading-relaxed">
+  <header class="fixed top-4 left-0 right-0 z-40 px-4 sm:px-8">
+    <nav class="max-w-5xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 focus:outline-none focus:ring-2 focus:ring-[color:var(--primary)] rounded">
+        <div class="w-10 h-10 rounded-full flex items-center justify-center bg-[color:var(--accent)] shadow-sm floaty" aria-hidden>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+            <path d="M12 2C9 5 6 9 6 13a6 6 0 0012 0c0-4-3-8-6-11z" fill="white"/>
+          </svg>
+        </div>
+        <span class="font-semibold text-slate-700">You Are Not Alone</span>
+      </a>
+      <div class="hidden md:flex items-center gap-4">
+        <a href="about.html" class="text-sm text-[color:var(--muted)]">About</a>
+        <a href="resources.html" class="text-sm text-[color:var(--muted)]">Resources</a>
+        <a href="quotes.html" class="text-sm text-[color:var(--muted)]">Quotes</a>
+        <a href="contact.html" class="text-sm text-[color:var(--muted)]">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="pt-28 max-w-5xl mx-auto px-6 pb-16">
+    <h1 class="text-3xl font-extrabold">Journal</h1>
+    <p class="mt-2 text-[color:var(--muted)]">A private place to note thoughts. Entries are stored locally in your browser.</p>
+
+    <section class="mt-6 grid md:grid-cols-2 gap-6">
+      <div class="p-4 bg-white rounded-xl shadow-sm">
+        <h3 class="font-semibold">New entry</h3>
+        <input id="entryTitle" class="mt-3 w-full p-2 rounded border focus:ring-2 focus:ring-[color:var(--primary)]" placeholder="Title (optional)">
+        <textarea id="entryBody" rows="6" class="mt-3 w-full p-2 rounded border focus:ring-2 focus:ring-[color:var(--primary)]" placeholder="Write a sentence or a paragraph — whatever feels right."></textarea>
+        <div class="mt-3 flex items-center gap-2">
+          <select id="entryMood" class="p-2 rounded border">
+            <option value="neutral">Mood: Neutral</option>
+            <option value="sad">Sad</option>
+            <option value="anxious">Anxious</option>
+            <option value="hopeful">Hopeful</option>
+          </select>
+          <button id="saveEntry" class="ml-auto px-4 py-2 rounded bg-[color:var(--primary)] text-white">Save</button>
+        </div>
+      </div>
+
+      <div class="p-4 bg-white rounded-xl shadow-sm">
+        <h3 class="font-semibold">Your entries</h3>
+        <input id="searchEntries" class="mt-2 w-full p-2 rounded border" placeholder="Search entries...">
+        <div id="entriesList" class="mt-3 space-y-2 text-[color:var(--muted)] text-sm max-h-96 overflow-auto"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white border-t py-6 fixed bottom-0 left-0 right-0">
+    <div class="max-w-5xl mx-auto px-6 text-sm text-[color:var(--muted)]">Back to <a href="index.html" class="underline">Home</a></div>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>
